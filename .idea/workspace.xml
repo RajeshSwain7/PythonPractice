@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5504474d-2fba-4b5c-871c-7b80000b1370" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Dictionary.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/List.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tuples.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/string.py" beforeDir="false" afterPath="$PROJECT_DIR$/string.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,19 +37,21 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Python.Formattingoutout.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Keyword.executor&quot;: &quot;Run&quot;,
-    &quot;Python.conditionalStatement.executor&quot;: &quot;Run&quot;,
-    &quot;Python.loopingStatement.executor&quot;: &quot;Run&quot;,
-    &quot;Python.string.executor&quot;: &quot;Run&quot;,
-    &quot;Python.typeConversion.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.Formattingoutout.executor": "Run",
+    "Python.Keyword.executor": "Run",
+    "Python.Tuples.executor": "Run",
+    "Python.conditionalStatement.executor": "Run",
+    "Python.files.executor": "Run",
+    "Python.loopingStatement.executor": "Run",
+    "Python.string.executor": "Run",
+    "Python.typeConversion.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
