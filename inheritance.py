@@ -187,4 +187,183 @@ obja.m1()
 obja.m2()
 obja.m3()
 
-#super ()
+
+#super():
+#1. invoke parent class method:
+#2. invoke parent class constructor:
+#3. invoke parent class destructor:
+#4. invoke parent class variable:
+#5. invoke parent class function:
+#1. invoke parent class method:
+class A:
+
+  def m1(self):
+    print("this is m1 from class A")
+
+
+class B(A):
+
+  def m2(self):
+    print("this is m2 from class B")
+    super().m1()  # call parent calss method  i.e. m1()
+
+
+obj = B()
+obj.m2()
+
+
+#2. invoke parent class constructor:
+class A:
+
+  def __init__(self):
+    print("this is A constructor")
+
+
+class B(A):
+
+  def __init__(self):
+    print("this is B constructor")
+    super().__init__()  # call parent calss constructor  i.e. __init__()
+
+
+obj = B()
+
+
+#3. invoke parent class destructor:
+class A:
+
+  def __del__(self):
+    print("this is A destructor")
+
+
+class B(A):
+
+  def __del__(self):
+    print("this is B destructor")
+    super().__del__()  # call parent calss destructor  i.e. __del__()
+
+
+obj = B()
+
+
+#4. invoke parent class variable:
+class A:
+  x, y = 10, 20
+
+
+class B(A):
+  a, b = 100, 200
+
+
+obj = B()
+print(obj.x, obj.y)
+print(obj.a, obj.b)
+
+
+class C:
+  a, b = 100, 200
+
+
+class B(C):
+  i, j = 10, 20
+
+  def m2(self, x, y):
+    print(self.i + self.j)
+    print(self.a + self.b)
+    print(x + y)
+
+
+obj = B()
+obj.m2(1000, 2000)
+
+# using super for the above example
+a, b = 1000, 2000
+
+
+class C:
+  a, b = 100, 200
+
+
+class B(C):
+  a, b = 10, 20
+
+  def m2(self, x, y):
+    print(x + y)
+    print(self.a + self.b)
+    print(
+        super().a + super().b
+    )  # when the variable are override we have to use the super() keyword.
+    print(globals()['a'] + globals()['b']
+          )  # global variabl are used to access the global variable.
+
+
+obj = B()
+obj.m2(1000, 2000)
+
+
+#5. invoke parent class function:
+class A:
+
+  def m1(self):
+    print("this is m1 from class A")
+
+
+class B(A):
+
+  def m2(self):
+    print("this is m2 from class B")
+    super().m1()  # call parent calss function  i.e. m1()
+
+
+obj = B()
+obj.m2()
+
+#super() with keyword arguments:
+
+
+#E.g
+class Person:
+
+  def __init__(self, first, last):
+    self.first = first
+    self.last = last
+
+
+class child(Person):
+
+  def __init__(self, first, last, id):
+    super().__init__(first, last)
+    self.id = id
+
+  def display(self):
+    print("EMP Id: {} FirstName:{} LastName:{}".format(self.id, self.first,
+                                                       self.last))
+
+
+c = child("Rajesh", "Swain", "101")
+c.display()
+
+#with str method
+
+
+#E.g
+class Person:
+
+  def __init__(self, first, last):
+    self.first = first
+    self.last = last
+
+
+class child(Person):
+
+  def __init__(self, first, last, id):
+    super().__init__(first, last)
+    self.id = id
+
+  def __str__(self):
+    return ("EMP Id: {} FirstName:{} LastName:{}".format(
+        self.id, self.first, self.last))
+
+
+c = child("Rajesh", "Swain", "101")
+print(c)  #invoke __str__() method and print the value
